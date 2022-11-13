@@ -134,7 +134,5 @@ function format(className: string) {
 export default function hoonir(className: string) {
   let modifiedClassName = format(className).split(" ")
 
-  console.log(convertToCss(analyzer(modifiedClassName)))
+  return convertToCss(analyzer(modifiedClassName))
 }
-
-hoonir("bg-red-500 bg-[#fff] width-pre-2")
